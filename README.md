@@ -10,7 +10,7 @@ This project is based on our other project, [Topview 3D Builder](https://github.
 
 Build 3D scenes and adjust camera angles in ComfyUI, export images or white-model animations directly to the canvas, then use a video model to render realistic videos.
 
-Supports 3D scene building, character and object placement, character posing, camera movements, a timeline, and keyframe animation.
+Build 3D scenes, arrange characters and objects, fine-tune poses, and choreograph camera moves with timeline-based keyframe animation.
 
 ## Installation and Updates
 
