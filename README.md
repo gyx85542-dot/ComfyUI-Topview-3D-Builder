@@ -61,8 +61,17 @@ git pull --ff-only origin main
 ### Quick start
 
 1. Add **Topview → Topview 3D Builder** from the node menu or search for **Topview 3D Builder**.
+
+   https://github.com/user-attachments/assets/0a73724f-d75e-4f62-acef-ac1c4d1b27bd
+
 2. Click **Open 3D Builder**. Add characters or objects, adjust poses, and set up your camera.
+
+   https://github.com/user-attachments/assets/0b66c435-75dd-4bd6-8efe-86ca57b2cd6e
+
 3. Click the central **Export** button. Select **Image** or **Video**, then configure the output.
+
+   https://github.com/user-attachments/assets/724a4556-249e-46e8-bf8a-daa5b9f1234d
+
 4. Click **Export to ComfyUI canvas**. After successful export and saving, the editor closes and the exported media appears as a native node.
 5. To save the scene without creating a media node, click **Save and Exit**. This updates the Builder card's preview and closes the editor.
 6. **Save your ComfyUI workflow** to keep the editable scene with the graph. Saving inside the editor does not save the workflow file itself.
