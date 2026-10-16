@@ -45,9 +45,9 @@ Git 安装用户在插件文件夹中执行：
 git pull
 ```
 
-## Tutorial
+## 教学
 
-[3D Builder: Build Scenes, Stage Action, and Move the Camera](https://www.topview.ai/academy/spatial-control#3-1-3d-builder-build-scenes-stage-action-and-move-the-camera)
+[3D Builder 教学：搭建场景、编排动作与运镜](https://www.topview.ai/academy/spatial-control#3-1-3d-builder-build-scenes-stage-action-and-move-the-camera)
 
 ## 功能介绍
 
