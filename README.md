@@ -20,12 +20,6 @@ Open a terminal inside your `ComfyUI/custom_nodes` folder and run:
 git clone https://github.com/gyx85542-dot/ComfyUI-Topview-3D-Builder.git
 ```
 
-For Windows portable, the parent folder is typically:
-
-```text
-ComfyUI_windows_portable/ComfyUI/custom_nodes/
-```
-
 **Option 2 — Download ZIP**
 
 Use **Code → Download ZIP** on this repository. Extract the plugin folder into `ComfyUI/custom_nodes`. Make sure `__init__.py` is directly inside the plugin folder, with no extra nested repository folder:
@@ -51,8 +45,6 @@ For a Git installation, open a terminal inside the installed plugin folder:
 git pull
 ```
 
-Restart ComfyUI and refresh the browser. For a ZIP installation, replace the plugin files with the latest download after backing up any custom changes.
-
 ## Features
 
 - **3D scene building:** place characters and objects, adjust poses, and compose your shot.
@@ -63,15 +55,7 @@ Restart ComfyUI and refresh the browser. For a ZIP installation, replace the plu
 
 ![Topview 3D Builder scene editor](docs/images/editor.png)
 
-## Requirements
-
-- A working ComfyUI installation with its Python dependencies installed.
-- A browser with WebGL support. Video export also depends on browser codec support.
-- A ComfyUI version providing the native `LoadVideo` node for video export to the canvas.
-
-Validated locally with ComfyUI **0.22.0** and frontend **1.43.18**. Other versions have not all been tested.
-
-## Quick start
+### Quick start
 
 1. Add **Topview → Topview 3D Builder** from the node menu or search for **Topview 3D Builder**.
 2. Click **Open 3D Builder**. Add characters or objects, adjust poses, and set up your camera.
@@ -82,7 +66,7 @@ Validated locally with ComfyUI **0.22.0** and frontend **1.43.18**. Other versio
 
 The Builder node has no input/output ports. Connect the exported image or video node to the rest of your workflow. You can also drag [the example workflow](examples/topview-3d-preview.json) into ComfyUI to try a two-character scene.
 
-## Export preview
+### Export preview
 
 Choose **Image** or **Video** in the same export dialog, then download the result or send it to the ComfyUI canvas.
 

@@ -20,8 +20,6 @@
 git clone https://github.com/gyx85542-dot/ComfyUI-Topview-3D-Builder.git
 ```
 
-Windows 便携版通常位于 `ComfyUI_windows_portable/ComfyUI/custom_nodes/`。
-
 **方法二：下载 ZIP**
 
 点击仓库页面的 **Code → Download ZIP**，将插件文件夹解压到 `ComfyUI/custom_nodes`。确认 `__init__.py` 直接位于插件文件夹内，不要多嵌套一层目录。目录结构如下：
@@ -47,8 +45,6 @@ Git 安装用户在插件文件夹中执行：
 git pull
 ```
 
-随后重启 ComfyUI 并刷新浏览器。ZIP 安装用户可下载最新版替换插件文件；如有自行修改，请先备份。
-
 ## 功能介绍
 
 - **3D 场景搭建**：放置角色与物体，调整姿势、位置和构图。
@@ -59,15 +55,7 @@ git pull
 
 ![Topview 3D Builder 场景编辑器](docs/images/editor.png)
 
-## 运行要求
-
-- 已正常安装并能运行的 ComfyUI，以及其 Python 依赖。
-- 支持 WebGL 的浏览器；视频导出还依赖浏览器的编码能力。
-- 导出视频到画布需要 ComfyUI 提供原生 `LoadVideo` 节点。
-
-本地验证环境为 ComfyUI **0.22.0**、前端 **1.43.18**，尚未覆盖所有版本。
-
-## 使用流程
+### 使用流程
 
 1. 从节点菜单 **Topview → Topview 3D Builder** 添加节点，或搜索 **Topview 3D Builder**。
 2. 点击 **打开 3D Builder**，添加角色与物体、调整姿势，并设置相机。
@@ -78,9 +66,9 @@ git pull
 
 Builder 节点本身没有输入、输出端口；请连接导出的图片或视频节点。也可以将 [示例工作流](examples/topview-3d-preview.json) 拖入 ComfyUI，体验双角色场景。
 
-## 导出预览
+### 导出预览
 
-在同一导出弹窗中选择 **图片** 或 **视频**，然后下载结果或导出到 ComfyUI 画布。截图为英文界面，插件会跟随 ComfyUI 的语言设置。
+在同一导出弹窗中选择 **图片** 或 **视频**，然后下载结果或导出到 ComfyUI 画布。
 
 ![图片导出设置](docs/images/export-image.png)
 
