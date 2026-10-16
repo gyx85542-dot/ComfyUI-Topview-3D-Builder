@@ -2,7 +2,7 @@
   <img src="docs/images/icon.png" alt="Topview 3D Builder" width="150" height="150">
 </p>
 
-# Topview 3D Builder for ComfyUI
+<h1 align="center">Topview 3D Builder for ComfyUI</h1>
 
 **English** · [简体中文](README.zh-CN.md)
 
@@ -66,21 +66,13 @@ git pull
 
 The Builder node has no input/output ports. Connect the exported image or video node to the rest of your workflow. You can also drag [the example workflow](examples/topview-3d-preview.json) into ComfyUI to try a two-character scene.
 
-### Export preview
-
-Choose **Image** or **Video** in the same export dialog, then download the result or send it to the ComfyUI canvas.
-
-![Image export settings](docs/images/export-image.png)
-
-![Video export settings](docs/images/export-video.png)
-
 ## Current scope
 
 The bundled library contains static poses, **not character motion clips**. The empty Motions tab is hidden; camera moves and timeline animation remain available. Depth, normal and OpenPose render passes, external model import, and API-only rendering are not included. Only one Builder editor can be open at a time.
 
 ## Development
 
-ComfyUI adaptation source and build instructions: [feature/comfyui-plugin](https://github.com/gyx85542-dot/topview-3d-builder/tree/feature/comfyui-plugin/comfyui).
+This project is based on our other project, [Topview 3D Builder](https://github.com/topviewai/topview-3d-builder), which supports integration with any agent tool to generate animated 3D scenes.
 
 ## License
 

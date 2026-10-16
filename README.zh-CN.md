@@ -2,7 +2,7 @@
   <img src="docs/images/icon.png" alt="Topview 3D Builder" width="150" height="150">
 </p>
 
-# Topview 3D Builder for ComfyUI
+<h1 align="center">Topview 3D Builder for ComfyUI</h1>
 
 [English](README.md) · **简体中文**
 
@@ -66,21 +66,13 @@ git pull
 
 Builder 节点本身没有输入、输出端口；请连接导出的图片或视频节点。也可以将 [示例工作流](examples/topview-3d-preview.json) 拖入 ComfyUI，体验双角色场景。
 
-### 导出预览
-
-在同一导出弹窗中选择 **图片** 或 **视频**，然后下载结果或导出到 ComfyUI 画布。
-
-![图片导出设置](docs/images/export-image.png)
-
-![视频导出设置](docs/images/export-video.png)
-
 ## 当前范围
 
 内置资源为静态姿势，**不包含角色动作片段库**，因此已隐藏空的 Motions 入口；运镜和时间轴动画仍可使用。目前不包含深度图、法线图、OpenPose 渲染通道、外部模型导入或纯 API 渲染，同一时间只能打开一个 Builder 编辑器。
 
 ## 开发
 
-ComfyUI 适配源码与构建说明：[feature/comfyui-plugin](https://github.com/gyx85542-dot/topview-3d-builder/tree/feature/comfyui-plugin/comfyui)。
+该项目基于我们的另一个项目 [Topview 3D Builder](https://github.com/topviewai/topview-3d-builder) 开发，支持接入任意 Agent 工具，生成 3D 场景动画。
 
 ## 许可证
 
