@@ -45,6 +45,10 @@ For a Git installation, open a terminal inside the installed plugin folder:
 git pull
 ```
 
+## Tutorial
+
+[3D Builder: Build Scenes, Stage Action, and Move the Camera](https://www.topview.ai/academy/spatial-control#3-1-3d-builder-build-scenes-stage-action-and-move-the-camera)
+
 ## Features
 
 - **3D scene building:** place characters and objects, adjust poses, and compose your shot.
@@ -63,12 +67,6 @@ git pull
 4. Click **Export to ComfyUI canvas**. After successful export and saving, the editor closes and the exported media appears as a native node.
 5. To save the scene without creating a media node, click **Save and Exit**. This updates the Builder card's preview and closes the editor.
 6. **Save your ComfyUI workflow** to keep the editable scene with the graph. Saving inside the editor does not save the workflow file itself.
-
-The Builder node has no input/output ports. Connect the exported image or video node to the rest of your workflow. You can also drag [the example workflow](examples/topview-3d-preview.json) into ComfyUI to try a two-character scene.
-
-## Current scope
-
-The bundled library contains static poses, **not character motion clips**. The empty Motions tab is hidden; camera moves and timeline animation remain available. Depth, normal and OpenPose render passes, external model import, and API-only rendering are not included. Only one Builder editor can be open at a time.
 
 ## Development
 
