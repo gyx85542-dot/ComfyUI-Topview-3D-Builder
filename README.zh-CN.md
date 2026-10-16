@@ -46,10 +46,6 @@ cd ComfyUI-Topview-3D-Builder
 git pull --ff-only origin main
 ```
 
-## 教学
-
-[3D Builder 教学：搭建场景、编排动作与运镜](https://www.topview.ai/academy/spatial-control#3-1-3d-builder-build-scenes-stage-action-and-move-the-camera)
-
 ## 示例
 
 <table>
@@ -134,6 +130,10 @@ git pull --ff-only origin main
 4. 点击 **导出到 ComfyUI 画布**。导出和保存成功后，浮窗自动关闭，画布中出现对应的原生媒体节点。
 5. 如只需保存场景，点击 **保存并退出**，即可更新 Builder 节点预览并关闭浮窗。
 6. **保存 ComfyUI 工作流**，以保留可编辑场景。编辑器里的保存不会代替工作流文件保存。
+
+## 教学
+
+[3D Builder 教学：搭建场景、编排动作与运镜](https://www.topview.ai/academy/spatial-control#3-1-3d-builder-build-scenes-stage-action-and-move-the-camera)
 
 ## 许可证
 
