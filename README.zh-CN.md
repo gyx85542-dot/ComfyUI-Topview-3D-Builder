@@ -50,7 +50,7 @@ git pull --ff-only origin main
 
 <table>
   <tr>
-    <th width="50%" align="center">3D 场景<br><sub>由 3D Builder 生成</sub></th>
+    <th width="50%" align="center">3D 场景<br><sub>由 3D Builder 创建</sub></th>
     <th width="50%" align="center">生成视频<br><sub>由 Topview.ai 渲染</sub></th>
   </tr>
   <tr>
@@ -80,7 +80,7 @@ git pull --ff-only origin main
 
 <table>
   <tr>
-    <th width="50%" align="center">3D 场景<br><sub>由 3D Builder 生成</sub></th>
+    <th width="50%" align="center">3D 场景<br><sub>由 3D Builder 创建</sub></th>
     <th width="50%" align="center">生成视频<br><sub>由 Topview.ai 渲染</sub></th>
   </tr>
   <tr>
