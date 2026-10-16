@@ -6,6 +6,8 @@
 
 [English](README.md) · **简体中文**
 
+该项目基于我们的另一个项目 [Topview 3D Builder](https://github.com/topviewai/topview-3d-builder) 开发，支持接入任意 Agent 工具，生成 3D 场景动画。
+
 在 ComfyUI 中搭建 3D 场景、调整机位，并将图片或动画视频直接导出到画布。
 
 ## 安装和更新
@@ -132,10 +134,6 @@ git pull --ff-only origin main
 4. 点击 **导出到 ComfyUI 画布**。导出和保存成功后，浮窗自动关闭，画布中出现对应的原生媒体节点。
 5. 如只需保存场景，点击 **保存并退出**，即可更新 Builder 节点预览并关闭浮窗。
 6. **保存 ComfyUI 工作流**，以保留可编辑场景。编辑器里的保存不会代替工作流文件保存。
-
-## 开发
-
-该项目基于我们的另一个项目 [Topview 3D Builder](https://github.com/topviewai/topview-3d-builder) 开发，支持接入任意 Agent 工具，生成 3D 场景动画。
 
 ## 许可证
 

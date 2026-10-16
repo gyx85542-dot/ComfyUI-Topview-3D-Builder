@@ -6,6 +6,8 @@
 
 **English** · [简体中文](README.zh-CN.md)
 
+This project is based on our other project, [Topview 3D Builder](https://github.com/topviewai/topview-3d-builder), which supports integration with any agent tool to generate animated 3D scenes.
+
 Build a 3D scene, frame your shot, and export images or animated videos directly to the ComfyUI canvas.
 
 ## Installation and Updates
@@ -132,10 +134,6 @@ git pull --ff-only origin main
 4. Click **Export to ComfyUI canvas**. After successful export and saving, the editor closes and the exported media appears as a native node.
 5. To save the scene without creating a media node, click **Save and Exit**. This updates the Builder card's preview and closes the editor.
 6. **Save your ComfyUI workflow** to keep the editable scene with the graph. Saving inside the editor does not save the workflow file itself.
-
-## Development
-
-This project is based on our other project, [Topview 3D Builder](https://github.com/topviewai/topview-3d-builder), which supports integration with any agent tool to generate animated 3D scenes.
 
 ## License
 
