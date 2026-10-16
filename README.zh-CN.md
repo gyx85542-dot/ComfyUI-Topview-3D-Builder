@@ -8,33 +8,9 @@
 
 在 ComfyUI 中搭建 3D 场景、调整机位，并将图片或动画视频直接导出到画布。
 
-基于 [Topview 3D Builder](https://github.com/topviewai/topview-3d-builder) 开发。原项目通过 3D 场景规划角色站位、机位和运镜，为 AI 视频提供构图参考。本插件将交互式编辑器与本地素材接入 ComfyUI 工作流，不包含 Agent 集成。
-
-仓库包含已编译的编辑器和内置素材，使用时无需编译前端、安装 Node.js、注册账号或配置 API Key。
-
-![Topview 3D Builder 场景编辑器](docs/images/editor.png)
-
-## 功能介绍
-
-- **交互式 3D 场景搭建**：放置、移动、旋转和缩放角色与基础物体，调整角色姿势与画面构图。
-- **本地内置素材**：包含 4 个角色、121 个静态姿势和 5 种基础几何体。
-- **机位与运镜**：支持相机预览、镜头构图与运镜预设。
-- **时间轴动画**：编辑场景动画，并将指定帧范围导出为视频。
-- **图片与视频导出**：选择机位、帧或帧范围、分辨率及画幅比例，可下载到本地或导出到 ComfyUI 画布。
-- **原生节点衔接**：图片导出生成 `LoadImage` 节点，视频导出生成 `LoadVideo` 节点，供后续工作流使用。
-- **紧凑浮窗**：编辑器居中显示，占视口的 90%；使用单行工具栏，右侧提供“保存并退出”。
-- **场景保存**：可编辑场景保存在 Builder 节点属性中，随 ComfyUI 工作流一起保存。
-- **15 种界面语言**：跟随 ComfyUI 语言设置，支持中英文、日语、韩语、法语、德语等。
-
-## 运行要求
-
-- 已正常安装并能运行的 ComfyUI，以及其 Python 依赖。
-- 支持 WebGL 的浏览器；视频导出还依赖浏览器的编码能力。
-- 导出视频到画布需要 ComfyUI 提供原生 `LoadVideo` 节点。
-
-本地验证环境为 ComfyUI **0.22.0**、前端 **1.43.18**，尚未覆盖所有版本。
-
 ## 安装方法
+
+无需编译前端、安装 Node.js 或配置 API Key。
 
 **方法一：Git 安装（推荐）**
 
@@ -63,6 +39,34 @@ ComfyUI/
 
 安装后重启 ComfyUI 并刷新浏览器；缓存未更新时按 **Ctrl+F5**。如果已有旧目录 `Topview-3D-Builder`，请更新或替换原目录，不要同时安装两份。
 
+## 更新方法
+
+Git 安装用户在插件文件夹中执行：
+
+```sh
+git pull
+```
+
+随后重启 ComfyUI 并刷新浏览器。ZIP 安装用户可下载最新版替换插件文件；如有自行修改，请先备份。
+
+## 功能介绍
+
+- **3D 场景搭建**：放置角色与物体，调整姿势、位置和构图。
+- **内置素材**：4 个角色、121 个静态姿势、5 种基础几何体。
+- **机位与运镜**：设置相机角度、预览镜头，使用运镜预设和时间轴编排动画。
+- **图片与视频导出**：选择机位、帧范围、分辨率和画幅，下载到本地或直接导出到 ComfyUI 画布。
+- **多语言**：跟随 ComfyUI 语言设置，支持 15 种语言。
+
+![Topview 3D Builder 场景编辑器](docs/images/editor.png)
+
+## 运行要求
+
+- 已正常安装并能运行的 ComfyUI，以及其 Python 依赖。
+- 支持 WebGL 的浏览器；视频导出还依赖浏览器的编码能力。
+- 导出视频到画布需要 ComfyUI 提供原生 `LoadVideo` 节点。
+
+本地验证环境为 ComfyUI **0.22.0**、前端 **1.43.18**，尚未覆盖所有版本。
+
 ## 使用流程
 
 1. 从节点菜单 **Topview → Topview 3D Builder** 添加节点，或搜索 **Topview 3D Builder**。
@@ -82,34 +86,13 @@ Builder 节点本身没有输入、输出端口；请连接导出的图片或视
 
 ![视频导出设置](docs/images/export-video.png)
 
-## 更新方法
-
-Git 安装用户在插件文件夹中执行：
-
-```sh
-git pull
-```
-
-随后重启 ComfyUI 并刷新浏览器。ZIP 安装用户可下载最新版替换插件文件；如有自行修改，请先备份。
-
-## 文件保存与常见问题
-
-- 场景预览及对应 JSON：`ComfyUI/input/topview3d/`。
-- 导出的图片、视频：`ComfyUI/input/topview3d/exports/`。
-- 工作流迁移到其他电脑后，可打开 Builder 并点击“保存并退出”重新生成预览；工作流引用的导出媒体需要单独复制。
-- 找不到节点：检查安装目录是否多嵌套一层，查看 ComfyUI 启动日志，再重启并刷新。
-- 缺少 `LoadVideo`：更新 ComfyUI，或先使用导出弹窗中的“下载”。
-- 加载失败：可选择“重试”或“不保存退出”；后者恢复打开编辑器前的 Builder 场景状态。保存失败时编辑器保持打开，便于重试。
-
 ## 当前范围
 
 内置资源为静态姿势，**不包含角色动作片段库**，因此已隐藏空的 Motions 入口；运镜和时间轴动画仍可使用。目前不包含深度图、法线图、OpenPose 渲染通道、外部模型导入或纯 API 渲染，同一时间只能打开一个 Builder 编辑器。
 
-## 开发与致谢
+## 开发
 
-- 原项目：[topviewai/topview-3d-builder](https://github.com/topviewai/topview-3d-builder)。
-- ComfyUI 适配源码与构建说明：[feature/comfyui-plugin](https://github.com/gyx85542-dot/topview-3d-builder/tree/feature/comfyui-plugin/comfyui)。
-- 本仓库提供可直接安装的插件。
+ComfyUI 适配源码与构建说明：[feature/comfyui-plugin](https://github.com/gyx85542-dot/topview-3d-builder/tree/feature/comfyui-plugin/comfyui)。
 
 ## 许可证
 
@@ -117,3 +100,7 @@ git pull
 - 内置素材：[assets/LICENSE](assets/LICENSE)、[assets/NOTICE](assets/NOTICE)。
 - 字体：[Darker Grotesque OFL](licenses/OFL.txt)、[Instrument Sans OFL](licenses/OFL-instrument-sans.txt)。
 - 前端依赖：[JavaScript 声明](editor/main.js.LEGAL.txt)、[CSS 声明](editor/main.css.LEGAL.txt)。
+
+---
+
+支持我们的另一个项目：[Topview 3D Builder](https://github.com/topviewai/topview-3d-builder)，支持通过 Agent 创建 3D 场景。
