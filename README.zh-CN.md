@@ -8,7 +8,7 @@
 
 该项目基于我们的另一个项目 [Topview 3D Builder](https://github.com/topviewai/topview-3d-builder) 开发，支持接入任意 Agent 工具，生成 3D 场景动画。
 
-在 ComfyUI 中搭建 3D 场景、调整机位，并将图片或动画视频直接导出到画布。
+在 ComfyUI 中搭建 3D 场景、调整机位，并将图片或白模动画视频直接导出到画布，再使用视频模型渲染为真实视频。
 
 ## 安装和更新
 

@@ -8,7 +8,7 @@
 
 This project is based on our other project, [Topview 3D Builder](https://github.com/topviewai/topview-3d-builder), which supports integration with any agent tool to generate animated 3D scenes.
 
-Build a 3D scene, frame your shot, and export images or animated videos directly to the ComfyUI canvas.
+Build 3D scenes and adjust camera angles in ComfyUI, export images or white-model animations directly to the canvas, then use a video model to render realistic videos.
 
 ## Installation and Updates
 
