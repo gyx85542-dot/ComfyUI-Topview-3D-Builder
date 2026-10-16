@@ -8,9 +8,7 @@
 
 在 ComfyUI 中搭建 3D 场景、调整机位，并将图片或动画视频直接导出到画布。
 
-## 安装方法
-
-无需编译前端、安装 Node.js 或配置 API Key。
+## 安装和更新
 
 **方法一：Git 安装（推荐）**
 
@@ -35,14 +33,15 @@ ComfyUI/
         └── web/
 ```
 
-安装后重启 ComfyUI 并刷新浏览器；缓存未更新时按 **Ctrl+F5**。如果已有旧目录 `Topview-3D-Builder`，请更新或替换原目录，不要同时安装两份。
+安装后重启 ComfyUI 并刷新浏览器。
 
-## 更新方法
+### 更新
 
-Git 安装用户在插件文件夹中执行：
+通过 Git 安装的用户，在 `ComfyUI/custom_nodes` 目录打开终端，依次执行以下命令，进入插件目录并拉取最新版本：
 
 ```sh
-git pull
+cd ComfyUI-Topview-3D-Builder
+git pull --ff-only origin main
 ```
 
 ## 教学

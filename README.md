@@ -8,9 +8,7 @@
 
 Build a 3D scene, frame your shot, and export images or animated videos directly to the ComfyUI canvas.
 
-## Installation
-
-No frontend build, Node.js runtime or API key is required.
+## Installation and Updates
 
 **Option 1 — Git (recommended)**
 
@@ -35,14 +33,15 @@ ComfyUI/
         └── web/
 ```
 
-Restart ComfyUI, then refresh the browser (**Ctrl+F5** if cached files remain). Install only one copy of this plugin: if an older `Topview-3D-Builder` folder already exists, update or replace that copy instead of keeping both names installed.
+Restart ComfyUI, then refresh the browser.
 
-## Updates
+### Update
 
-For a Git installation, open a terminal inside the installed plugin folder:
+For a Git installation, open a terminal inside your `ComfyUI/custom_nodes` folder, then enter the plugin directory and pull the latest version:
 
 ```sh
-git pull
+cd ComfyUI-Topview-3D-Builder
+git pull --ff-only origin main
 ```
 
 ## Tutorial
