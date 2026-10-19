@@ -64,7 +64,7 @@ git pull --ff-only origin main
 
    https://github.com/user-attachments/assets/0a73724f-d75e-4f62-acef-ac1c4d1b27bd
 
-2. 点击 **打开 3D Builder**，添加角色与物体、调整姿势，并设置相机。
+2. 点击 **打开 3D Builder**，添加角色与物体、调整姿势、设置相机，并添加时间轴动画。
 
    https://github.com/user-attachments/assets/0b66c435-75dd-4bd6-8efe-86ca57b2cd6e
 

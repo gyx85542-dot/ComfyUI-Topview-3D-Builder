@@ -64,7 +64,7 @@ git pull --ff-only origin main
 
    https://github.com/user-attachments/assets/0a73724f-d75e-4f62-acef-ac1c4d1b27bd
 
-2. Click **Open 3D Builder**. Add characters or objects, adjust poses, and set up your camera.
+2. Click **Open 3D Builder**. Add characters and objects, adjust poses, set up your camera, and animate the scene on the timeline.
 
    https://github.com/user-attachments/assets/0b66c435-75dd-4bd6-8efe-86ca57b2cd6e
 
