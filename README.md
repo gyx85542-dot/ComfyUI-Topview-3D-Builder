@@ -76,7 +76,7 @@ git pull --ff-only origin main
 5. To save the scene without creating a media node, click **Save and Exit**. This updates the Builder card's preview and closes the editor.
 6. **Save your ComfyUI workflow** to keep the editable scene with the graph. Saving inside the editor does not save the workflow file itself.
 
-## Examples
+## Example Results
 
 <table>
   <tr>
