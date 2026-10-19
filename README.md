@@ -51,7 +51,7 @@ git pull --ff-only origin main
 ## Features
 
 - **3D scene building:** place characters and objects, adjust poses, and compose your shot.
-- **Built-in assets:** 4 characters, 121 static poses and 5 primitive types.
+- **Built-in assets:** 4 characters, 121 static poses, 5 primitive types, 15 camera views (including the current view), and 24 camera movement presets.
 - **Cameras and animation:** frame shots, preview camera views, and plan animation with camera movement presets and the timeline.
 - **Image and video export:** choose cameras, frame ranges, resolution and aspect ratio. Download locally or export directly to the ComfyUI canvas.
 - **Multilingual UI:** follows ComfyUI settings with support for 15 languages.
